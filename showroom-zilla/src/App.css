@@ -1,38 +1,118 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.search-text {
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car-card {
+  width: 200px;
+  background-color: brown;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.car-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-info {
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+.buy-button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #f57c00;
+}
+.h2{
+width: 265px;
+height: 24px;
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+display: flex;
+color: #0599DE;
+}
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.car-card {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.car-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.car-details {
+  margin-top: 10px;
+}
+
+.car-details h3 {
+  margin-bottom: 5px;
+}
+
+.car-details p {
+  margin-bottom: 3px;
 }
